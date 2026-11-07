@@ -35,6 +35,10 @@ const variants = [
   {file:'bands-resonance', title:'Harmonic sinusoidal bands', amplitude:90,period:900,phase:.3,overtone:35}
 ];
 const outputs = [['../design/tokens.css', css]];
+// A compact website frame keeps every identity colour visible at phone widths.
+const spectrum = colours.map((colour, i) => `<rect x="${i * 160}" width="160" height="48" fill="${tokens.colour[colour]}"/>`).join('');
+outputs.push(['../assets/spectrum.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 48" preserveAspectRatio="none"><title>Full company spectrum</title>${spectrum}</svg>\n`]);
+
 for (const spec of variants) {
   const paths = colours.slice(1).map((c,i) => `<path fill="${tokens.colour[c]}" d="${curve(145+i*54,spec)} L1280 640 H0Z"/>`).join('\n  ');
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640"><title>${spec.title}</title><desc>Original company graphic: a fundamental sine wave with a gentle second harmonic, connecting flowing colour to audio roots. Flat gold uses the sampled reference colour.</desc>\n  <rect width="1280" height="640" fill="${tokens.colour.red}"/>\n  ${paths}\n</svg>\n`;

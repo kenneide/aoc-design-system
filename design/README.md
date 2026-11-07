@@ -33,7 +33,7 @@ The original PNG embeds a Display P3 profile. The values below are the dominant 
 
 Use ink on paper, white, lime, yellow and orange; use white on ink. These pairs meet 4.5:1 contrast for normal text. Muted on paper and white also meets 4.5:1. Blue, green, red and gold are graphic colours; do not assume white or ink body text will pass on them. Check any new pair. Never rely on colour alone to convey state.
 
-Use a quiet reading surface with one dominant accent in most compositions. All eight original colours can appear together in the bands. The palette may inform UI and page structure even when the bands are absent. Do not force every colour into every artifact.
+Use quiet reading surfaces and a dominant accent within content. Company-facing websites must also show the complete eight-colour spectrum prominently in both the header and footer: red → blue → green → lime → gold → white → orange → yellow. A lime highlight alone is not a sufficient company identity statement. This website framing requirement does not require every colour in every control, content section or non-website artifact.
 
 ## Typography and hierarchy
 
@@ -60,7 +60,7 @@ Give the motif a dedicated area. Avoid running body text across moving or multic
 
 ## Applications
 
-**Website (06.1):** wordmark, generous heading, brief supporting copy, single action and dedicated graphic panel. This is an illustrative company homepage, not verified marketing copy.
+**Website (06.1):** wordmark, generous heading, brief supporting copy, single action and dedicated graphic panel. Company-facing websites use a prominent, full-width spectrum ribbon in both the header and footer, including on phones and in light/dark modes. Use `assets/spectrum.svg` for a compact frame or a complete flowing-band composition that leaves all eight colours visible. Keep navigation, identity and contact text on separate quiet reading surfaces. Do not crop out colours or reduce the frame to a single accent or hairline; start at 32 px high on phones and 48 px on larger screens. The rectangular spectrum ribbon may scale to its container; flowing curves retain their proportions. This is an illustrative company homepage, not verified marketing copy.
 
 **Slides (06.2):** lime title field, compact identity and cropped bands; content slide with a strong heading, white reading field and a few aligned points. These are HTML specimens, not PowerPoint files.
 

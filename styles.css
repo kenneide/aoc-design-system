@@ -1899,3 +1899,20 @@ input:focus-visible,select:focus-visible {
 @media(max-width:600px) {
   .footer-links { width: 100%; margin-left: 0; }
 }
+
+/* Full-spectrum company framing; text stays on the separate paper surface. */
+.site-header,.site-footer { position:relative; }
+.site-header { padding-top:76px; }
+.site-footer { padding-bottom:96px; }
+.site-header::before,.site-footer::after {
+  content:""; position:absolute; left:0; right:0; height:48px;
+  background:url('assets/spectrum.svg') center / 100% 100% no-repeat;
+  pointer-events:none;
+}
+.site-header::before { top:0; }
+.site-footer::after { bottom:0; }
+@media(max-width:600px) {
+  .site-header { padding-top:60px; }
+  .site-footer { padding-bottom:80px; }
+  .site-header::before,.site-footer::after { height:32px; }
+}

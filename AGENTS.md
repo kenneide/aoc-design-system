@@ -10,7 +10,7 @@ Use [design/company.json](design/company.json) as the source of truth for the co
 - Retro-futuristic, optimistic and clear; inspired by Munich 1972 and Moscow 1980.
 - The surviving business-card background is the visual reference. Company-facing website headers and footers must prominently show the full spectrum: red → blue → green → lime → gold → white → orange → yellow, including at phone widths and in light/dark modes. Lime alone is insufficient. Use a dedicated spectrum ribbon or complete band graphic, keeping text on quiet surfaces. Flowing bands remain a selective signature motif within content.
 - The grounded palette tone is **gold**, not olive. Organic sinusoids and gentle harmonics connect the flowing graphics to the owner’s audio roots. Optimism means bright contrasts, clean construction and shared progress toward a new future.
-- Smooth, purposeful animation is desirable. Maestro's colours, typography and branding are explicitly excluded.
+- Smooth, purposeful animation is desirable. Light/dark theme changes blend semantic colours together over the shared 700 ms theme token with smoothstep easing, as in Gym Circuit Logger. First paint is immediate; rapid reversals start from the current colours, and reduced motion skips the blend. Keep artwork colours and layout fixed. Maestro's colours, typography and branding are explicitly excluded.
 
 ## Proposed defaults, awaiting visual feedback
 

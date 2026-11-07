@@ -286,7 +286,7 @@ button {
   text-align:left;
   color:var(--text);
   min-width:0;
-  transition:background var(--motion-quick)
+  transition:background var(--theme-colour-response,var(--motion-quick))
 }
 .swatch:last-child {
   border-right:0
@@ -1359,7 +1359,7 @@ details p {
   color:var(--text);
   font:inherit;
   font-size:14px;
-  transition:border-color var(--motion-quick),box-shadow var(--motion-quick)
+  transition:border-color var(--theme-colour-response,var(--motion-quick)),box-shadow var(--motion-quick)
 }
 .control-row input[type=text]:focus,.control-row select:focus {
   border-color:var(--colour-ink);
@@ -1487,7 +1487,7 @@ input:focus-visible,select:focus-visible {
   background:var(--colour-paper);
   cursor:pointer;
   margin:0;
-  transition:background var(--motion-settle) var(--motion-ease)
+  transition:background var(--theme-colour-response,var(--motion-settle)) var(--motion-ease)
 }
 .control-switch::after {
   content:'';
@@ -1542,7 +1542,7 @@ input:focus-visible,select:focus-visible {
   height:260px;
   background:var(--composition-accent);
   overflow:hidden;
-  transition:width var(--motion-settle) var(--motion-ease),height var(--motion-settle) var(--motion-ease),background-color 700ms ease;
+  transition:width var(--motion-settle) var(--motion-ease),height var(--motion-settle) var(--motion-ease),background-color var(--theme-colour-response,700ms) ease;
   color:var(--colour-ink);
   padding:24px
 }
@@ -1776,7 +1776,7 @@ input:focus-visible,select:focus-visible {
   height:calc(24px + var(--flow)*46px)
 }
 .button {
-  transition:transform var(--motion-quick) var(--motion-ease),box-shadow var(--motion-quick) var(--motion-ease),background-color var(--motion-quick),border-color var(--motion-quick),color var(--motion-quick)
+  transition:transform var(--motion-quick) var(--motion-ease),box-shadow var(--motion-quick) var(--motion-ease),background-color var(--theme-colour-response,var(--motion-quick)),border-color var(--theme-colour-response,var(--motion-quick)),color var(--theme-colour-response,var(--motion-quick))
 }
 .live-composition[data-format=card]>p {
   font-size:22px
@@ -2007,3 +2007,6 @@ input:focus-visible,select:focus-visible,.segment label:has(input:focus-visible)
 .card,.slide,.footer-paper { --focus:var(--colour-ink); }
 .footer-ink { --focus:var(--colour-yellow); }
 @media print { body { color:var(--colour-ink); } }
+
+/* The shared palette supplies each colour frame; avoid a second component fade. */
+:root[data-theme-transition=true] { --theme-colour-response:0ms; }

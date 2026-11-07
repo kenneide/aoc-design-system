@@ -39,6 +39,8 @@
   --motion-settle: 400ms;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --motion-band-duration: 1800ms;
+  --motion-theme: 700ms;
+  --motion-theme-ease: cubic-bezier(0.333333, 0, 0.666667, 1);
   --background: var(--colour-paper);
   --surface: var(--colour-white);
   --text: var(--colour-ink);

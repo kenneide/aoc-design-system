@@ -1,0 +1,37 @@
+name: Design feedback
+description: Refine a specimen, a principle or a foundation.
+title: "Design feedback: "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Overall direction
+        - Colour
+        - Typography
+        - Flowing bands
+        - Motion
+        - Website specimen
+        - Presentation specimen
+        - Business card specimen
+        - Guidance for AI models
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Section or specimen link
+      description: Paste the section URL or ID (for example 06.3).
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What should change or stay?
+      description: Describe what feels right, what feels wrong, and the result you want. Screenshots welcome.
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Viewing context
+      description: Device, browser and approximate screen size, if relevant.

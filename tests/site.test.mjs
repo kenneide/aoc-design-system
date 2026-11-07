@@ -16,7 +16,7 @@ test('every local asset and section link resolves under a repository prefix', as
   const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
   assert.equal(ids.size, [...html.matchAll(/\bid="([^"]+)"/g)].length, 'Duplicate IDs');
   for (const [, ref] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
-    if (ref.startsWith('https:')) continue;
+    if (/^(https:|mailto:)/.test(ref)) continue;
     assert.ok(!ref.startsWith('/'), `Root-relative asset breaks Pages: ${ref}`);
     if (ref.startsWith('#')) { if (ref !== '#') assert.ok(ids.has(ref.slice(1)), `Missing section ${ref}`); }
     else await access(ref);
@@ -31,4 +31,17 @@ test('reduced motion and original-source disclosure are present', () => {
   assert.match(css, /animation:none!important/);
   assert.match(html, /new interpretation, not a recovered print file/);
   assert.match(html, /Print colour and paper need proofing/);
+});
+
+test('public company identity and footer links match the shared company record', async () => {
+  const company = JSON.parse(await readFile('design/company.json', 'utf8'));
+  const readable = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  assert.equal(tokens.name, company.name);
+  assert.ok(readable.includes(company.name));
+  assert.ok(html.includes(`<title>House style — ${company.name}</title>`));
+  const footer = html.match(/<footer class="site-footer"[^>]*>([\s\S]+?)<\/footer>/)[1];
+  assert.ok(footer.includes(`href="mailto:${company.inquiriesEmail}"`));
+  assert.ok(footer.includes(company.kvk.url.replaceAll('&','&amp;')));
+  assert.ok(footer.includes(`KVK ${company.kvk.number}`));
+  assert.ok(!/Alan O Cinneide Software(?! BV)/.test(html));
 });

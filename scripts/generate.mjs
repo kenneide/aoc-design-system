@@ -1,5 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const tokens = JSON.parse(await readFile(new URL('../design/tokens.json', import.meta.url)));
+const company = JSON.parse(await readFile(new URL('../design/company.json', import.meta.url)));
+if (tokens.name !== company.name) throw new Error('tokens.name must match design/company.json');
 const vars = [];
 for (const group of ['colour', 'font', 'space', 'layout', 'motion']) {
   for (const [key, value] of Object.entries(tokens[group])) vars.push(`  --${group}-${key.replace(/[A-Z]/g, m => '-' + m.toLowerCase())}: ${value};`);

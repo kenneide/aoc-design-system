@@ -1874,3 +1874,28 @@ input:focus-visible,select:focus-visible {
   .wave-gallery { grid-template-columns: 1fr; gap: 24px; }
 }
 .audio-inspiration img { width:100%; }
+/* Canonical company identity and contact links. */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  margin-left: auto;
+  font-size: 11px;
+}
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+@media(max-width:900px) {
+  .footer-links { gap: 8px 20px; }
+  .site-footer>span { width: 100%; }
+}
+@media(max-width:600px) {
+  .footer-links { width: 100%; margin-left: 0; }
+}

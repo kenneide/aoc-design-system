@@ -2,7 +2,7 @@
 
 ## Established by the owner
 
-- Name: Alan O Cinneide Software.
+- Name: Alan O Cinneide Software BV.
 - Use across websites, presentations, business cards and future artifacts; make decisions discoverable for AI models.
 - Public GitHub repository, GitHub Pages reference site and GitHub issue feedback.
 - The colours of the surviving card artwork are particularly important. Use the bands as a selective signature motif alongside calm, readable layouts.
@@ -52,3 +52,5 @@ Space Grotesk variable TTF and OFL.txt obtained from the Google Fonts `ofl/space
 - [Moscow emblem SVG redraw — Openclipart, rones](https://openclipart.org/detail/98035/olympiad1980-emblem) and [Munich emblem SVG — Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_M%C3%BCnchen_1972.svg): external vector reference records, not original poster files.
 
 Historical references are linked, not bundled or used as company identity assets. The signal and band SVGs are original generated illustrations.
+
+2026-11-07 — owner explicitly standardised the company name as **Alan O Cinneide Software BV**, superseding the earlier shortened display-name convention. Added the inquiry address used in the owner's existing invoicing configuration and KVK 84179686 confirmed in registry correspondence to the public identity record. The owner requested publication of inquiry and KVK links; no administrative source files are published.

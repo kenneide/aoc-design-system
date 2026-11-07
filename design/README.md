@@ -2,6 +2,12 @@
 
 **Status: proposed visual system.** The reference artwork and user direction are established. Typography, exact digital palette, compositions and motion values are proposals to refine through feedback.
 
+## Company identity and contact
+
+Use **Alan O Cinneide Software BV** everywhere the company is named, including wordmarks, page titles, specimen branding and company references. Keep **BV** without periods, as specified by the owner. A line break before “Software BV” is allowed; do not omit the suffix.
+
+[company.json](company.json) is the canonical public identity record. Inquiry links use `mailto:alan.ocinneide@gmail.com`. Website footers show the full company name, an email inquiry link and **KVK 84179686** linked to the official KVK search for that number. The site and specimens use these values; tests check the footer against the shared record. Changes to contact details must update the record and all corresponding links together.
+
 ## Character
 
 Retro-futuristic: optimistic colour, geometric clarity and a sense of forward movement. Use Munich 1972 and Moscow 1980 as references for the ambition of a coherent identity across media. The company's own flowing-band artwork takes precedence over historical imitation. The aim is an expressive identity with clear information, suitable for professional websites, presentations and small printed objects.

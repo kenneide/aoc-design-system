@@ -1,8 +1,10 @@
-# Alan O Cinneide Software — house style
+# Alan O Cinneide Software BV — house style
 
 An evolving design system for websites, presentations and printed material. Version 0.3 is a **proposal for review**, grounded in the company's surviving business-card background and a retro-futuristic direction inspired by Munich 1972 and Moscow 1980.
 
 **[Open the reference site](https://kenneide.github.io/aoc-design-system/)** · **[Give feedback](https://github.com/kenneide/aoc-design-system/issues/new?template=design-feedback.yml)**
+
+Company name, inquiry email and KVK link are standardised in [design/company.json](design/company.json).
 
 ## Start here
 

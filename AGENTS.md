@@ -1,10 +1,12 @@
-# Creating with the Alan O Cinneide Software house style
+# Creating with the Alan O Cinneide Software BV house style
 
 Read [design/README.md](design/README.md), [design/PROVENANCE.md](design/PROVENANCE.md) and [design/tokens.json](design/tokens.json) before creating an artifact. Use the [reference site](https://kenneide.github.io/aoc-design-system/) and its actual source as visual examples. The user's instructions override these defaults.
 
+Use [design/company.json](design/company.json) as the source of truth for the company name, inquiry email and KVK link. Website footers should show the full company name, a mailto inquiry link and the linked KVK number.
+
 ## Established direction
 
-- Display name: **Alan O Cinneide Software**. Reserve B.V. for legal material when needed.
+- Company name: **Alan O Cinneide Software BV**. Include **BV** in the wordmark, site metadata, specimens and company references. Do not shorten the company name or substitute B.V.
 - Retro-futuristic, optimistic and clear; inspired by Munich 1972 and Moscow 1980.
 - The surviving business-card background is the visual reference. Its colours matter throughout the system; flowing bands are a selective signature motif.
 - The grounded palette tone is **gold**, not olive. Organic sinusoids and gentle harmonics connect the flowing graphics to the owner’s audio roots. Optimism means bright contrasts, clean construction and shared progress toward a new future.

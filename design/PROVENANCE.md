@@ -40,3 +40,5 @@ Space Grotesk variable TTF and OFL.txt obtained from the Google Fonts `ofl/space
 ## Review log
 
 2026-11-07 — v0.1 proposed. Awaiting visual review; no subsequent choices are marked approved.
+
+2026-11-07 — v0.2: owner requested less prose and hands-on input/motion examples from recent repos. Added control patterns informed by Gym Circuit Logger and Mise en Place; visuals remain this house style. These new specimens are proposed interpretations.

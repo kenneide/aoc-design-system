@@ -18,6 +18,8 @@ Read [design/README.md](design/README.md), [design/PROVENANCE.md](design/PROVENA
 - Use motion tokens for short interactions. Decorative band movement is opt-in, finite and respects `prefers-reduced-motion`. Keep text still and usable with JavaScript disabled.
 - The reference website, card and slide specimens demonstrate these defaults; they are not user-approved final brand specifications.
 
+Prefer short captions and working specimens over explanatory paragraphs on the reference site. Use `#controls` for live input, feedback and panel examples; preserve their native keyboard behaviour.
+
 ## Applying to other formats
 
 For websites, reuse `design/tokens.css` and the SVG. Keep local URLs relative if deploying under a repository prefix. Preserve keyboard focus and readable contrast. For slides, use Space Grotesk with a clear title/content hierarchy and 16:9 layouts; derive sizes for the viewing distance rather than copying CSS pixels. For cards, use the 65 × 65 mm size as a historical reference. Obtain printer specifications and proof colour, bleed, safe area, paper and white-ink behaviour before producing a print file. Never claim the reconstructed card is the lost original.

@@ -63,3 +63,9 @@ Give the motif a dedicated area. Avoid running body text across moving or multic
 ## Feedback and decision process
 
 Link to the section or specimen when opening a design feedback issue. Describe what feels right, what should change and the intended result. Preserve established references, and update tokens, examples and written rules together when a proposed choice changes. Record the accepted decision and its source in `PROVENANCE.md`. Do not describe this version as approved until the owner has explicitly reviewed it.
+
+## Live control patterns / v0.2
+
+The `#controls` playground demonstrates native range, switch, radio group, checkbox, text and select inputs, primary/secondary/disabled buttons, in-place action feedback and a modal panel. Controls immediately update a local composition; no data is sent or stored. Arrow keys operate the slider and radio group; Space toggles switches and checkboxes. The dialog traps focus natively, closes with Escape, and returns focus to its opener.
+
+Interaction references: Gym Circuit Logger (native effort slider, 700 ms palette settling, 420/320 ms panel opening/closing, interruption cancellation) and Mise en Place (quick control feedback). These are behavioural references, not inherited branding. The sliding selection marker uses the 400 ms settling token. Range input follows the pointer immediately, with a short visual settling response. No simulated network request or artificial loading delay. Reduced motion removes transitions and modal animation while preserving all state changes.

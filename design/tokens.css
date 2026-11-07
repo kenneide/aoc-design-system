@@ -12,6 +12,10 @@
   --colour-paper: #f6f5ef;
   --colour-muted: #5d6257;
   --colour-line: #d8d9ce;
+  --colour-night: #151813;
+  --colour-charcoal: #252a22;
+  --colour-mist: #bfc5b6;
+  --colour-dark-line: #4a5144;
   --font-family: Space Grotesk;
   --font-fallback: Arial, sans-serif;
   --font-body: 1rem;
@@ -43,4 +47,32 @@
   --on-action: var(--colour-white);
   --focus: var(--colour-ink);
   --highlight: var(--colour-lime);
+  --border: var(--colour-line);
+  color-scheme: light;
+}
+:root[data-theme=dark] {
+  --background: var(--colour-night);
+  --surface: var(--colour-charcoal);
+  --text: var(--colour-paper);
+  --secondary-text: var(--colour-mist);
+  --action: var(--colour-lime);
+  --on-action: var(--colour-ink);
+  --focus: var(--colour-yellow);
+  --highlight: var(--colour-lime);
+  --border: var(--colour-dark-line);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme=light]) {
+  --background: var(--colour-night);
+  --surface: var(--colour-charcoal);
+  --text: var(--colour-paper);
+  --secondary-text: var(--colour-mist);
+  --action: var(--colour-lime);
+  --on-action: var(--colour-ink);
+  --focus: var(--colour-yellow);
+  --highlight: var(--colour-lime);
+  --border: var(--colour-dark-line);
+    color-scheme: dark;
+  }
 }

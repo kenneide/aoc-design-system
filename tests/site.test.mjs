@@ -19,7 +19,7 @@ test('every local asset and section link resolves under a repository prefix', as
     if (/^(https:|mailto:)/.test(ref)) continue;
     assert.ok(!ref.startsWith('/'), `Root-relative asset breaks Pages: ${ref}`);
     if (ref.startsWith('#')) { if (ref !== '#') assert.ok(ids.has(ref.slice(1)), `Missing section ${ref}`); }
-    else await access(ref);
+    else await access(ref.split(/[?#]/)[0]);
   }
 });
 test('documented reading pairs meet WCAG AA for normal text', () => {

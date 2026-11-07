@@ -10,6 +10,7 @@
   <link rel="preload" href="assets/fonts/SpaceGrotesk.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="design/tokens.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
   <script src="app.js" defer></script>
   <script src="controls.js" defer></script>
 </head>
@@ -18,6 +19,7 @@
 <header class="site-header">
   <a class="wordmark" href="#" aria-label="Alan O Cinneide Software BV home">Alan O Cinneide<span>Software BV</span></a>
   <nav aria-label="Main navigation"><a href="#controls">Controls</a><a href="#inspiration">Inspiration</a><a href="#applications">In use</a></nav>
+  <button class="theme-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
   <a class="version" href="https://github.com/kenneide/aoc-design-system">House style <span>v0.3 ↗</span></a>
 </header>
 <main id="main">
@@ -63,6 +65,26 @@
     </div>
   </section>
 
+  <section id="wave-details" class="section wave-details" aria-labelledby="wave-details-title">
+    <div class="section-label"><span class="index">04.1</span><h2 id="wave-details-title">A little flow. In the details.</h2><span class="tag">Working specimens</span></div>
+    <div class="specimen-heading"><h3>Eyebrows</h3><span>01 / Small beginnings</span></div>
+    <div class="wave-eyebrows">
+      <article><span class="wave-kicker"><img src="assets/bands.svg" width="64" height="32" alt="">A common thread</span><h3>Room for an idea.</h3><span class="detail-caption">Colour tab</span></article>
+      <article><span class="wave-kicker wave-kicker-line"><img src="assets/signal.svg" width="88" height="44" alt="">In good company</span><h3>A shared direction.</h3><span class="detail-caption">Signal on ink</span></article>
+      <article><span class="wave-kicker wave-kicker-stack"><img src="assets/wave-trim.svg" width="128" height="16" alt="">What comes next</span><h3>Space to explore.</h3><span class="detail-caption">Floating ribbon</span></article>
+    </div>
+    <div class="specimen-heading"><h3>Accents</h3><span>02 / A change of pace</span></div>
+    <div class="wave-accents">
+      <article class="accent-rule"><span class="eyebrow">Between ideas</span><h3>A softer dividing line.</h3><img src="assets/wave-trim.svg" width="1280" height="160" alt=""><span class="detail-caption">Full-width wave rule</span></article>
+      <article class="accent-edge"><div><span class="eyebrow">A margin of colour</span><h3>Something<br>to build on.</h3></div><img src="assets/bands-calm.svg" width="1280" height="640" alt=""><span class="detail-caption">Edge accent</span></article>
+    </div>
+    <div class="specimen-heading"><h3>Footers</h3><span>03 / A colourful sign-off</span></div>
+    <div class="footer-studies">
+      <article class="wave-footer footer-paper" aria-label="Paper footer specimen"><img class="footer-wave" src="assets/wave-trim.svg" width="1280" height="160" alt=""><div class="footer-study-body"><span class="eyebrow">Keep in touch / Footer concept</span><h3>More good things<br>ahead.</h3><a class="text-link" href="mailto:alan.ocinneide@gmail.com">Start a conversation ↗</a><div class="footer-study-meta"><strong>Alan O Cinneide Software BV</strong><a href="mailto:alan.ocinneide@gmail.com">alan.ocinneide@gmail.com</a><a href="https://www.kvk.nl/zoeken/?source=all&amp;q=84179686">KVK 84179686 ↗</a></div></div></article>
+      <article class="wave-footer footer-ink" aria-label="Ink footer specimen"><div class="footer-study-body"><span class="eyebrow">Until next time / Footer concept</span><h3>On to the<br>next idea.</h3><a class="text-link" href="mailto:alan.ocinneide@gmail.com">Say hello ↗</a><div class="footer-study-meta"><strong>Alan O Cinneide Software BV</strong><a href="mailto:alan.ocinneide@gmail.com">alan.ocinneide@gmail.com</a><a href="https://www.kvk.nl/zoeken/?source=all&amp;q=84179686">KVK 84179686 ↗</a></div></div><img class="footer-wave" src="assets/wave-trim.svg" width="1280" height="160" alt=""></article>
+    </div>
+  </section>
+
   <section id="inspiration" class="section inspiration-section" aria-labelledby="inspiration-title">
     <div class="section-label"><span class="index">04.1</span><h2 id="inspiration-title">Where it comes from</h2><span class="tag">Inspiration</span></div>
     <div class="inspiration-grid">
@@ -101,8 +123,24 @@
     <div class="section-intro"><p class="large-copy">From a first impression<br>to a bigger picture.</p><p>Proposed compositions. Ready for your feedback.</p></div>
     <div class="specimen-heading"><h3>On the web</h3><span>06.1 / Company homepage concept</span></div>
     <div class="web-specimen"><div class="browser-bar"><span class="browser-dots" aria-hidden="true">● ● ●</span><span>Alan O Cinneide Software BV</span><span aria-hidden="true">↗</span></div><div class="web-inner"><div class="web-nav"><strong>Alan O Cinneide<br>Software BV</strong><span>Ideas into software.</span></div><div class="web-hero"><div><span class="eyebrow">Independent thinking. Thoughtful software.</span><h4>Good ideas.<br>Built to work.</h4><p>A place for clear thinking, creative problem-solving and software made with care.</p><a class="button" href="mailto:alan.ocinneide@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div><div class="web-art" aria-hidden="true"><img src="assets/bands.svg" width="1280" height="640" alt=""></div></div><div class="web-bottom"><span>Curiosity in the process.</span><span>Clarity in the outcome.</span></div></div></div>
-    <div class="specimen-heading"><h3>In a presentation</h3><span>06.2 / Title + content / 16:9</span></div>
-    <div class="slides"><article class="slide slide-title" aria-label="Presentation title slide concept"><span>Alan O Cinneide Software BV</span><h4>A clearer way<br>forward.</h4><div class="slide-bands" aria-hidden="true"></div><span class="slide-footer">An introduction / Presentation concept</span></article><article class="slide slide-content" aria-label="Presentation content slide concept"><span>The approach</span><h4>Start with<br>the right question.</h4><div class="slide-columns"><div><b>01 / Understand</b><p>Make space for the problem.</p></div><div><b>02 / Explore</b><p>Find the useful possibilities.</p></div><div><b>03 / Make</b><p>Turn the idea into something real.</p></div></div><span class="slide-footer">Alan O Cinneide Software BV <span>02</span></span></article></div>
+    <div class="specimen-heading" id="slide-templates"><h3>In a presentation</h3><span>06.2 / Twelve HTML layouts / 16:9</span></div>
+    <div class="slide-template-intro"><p>Bold openings. Quiet content. A colourful close.</p><a class="text-link" href="presentations/index.html">Open the presentation <span aria-hidden="true">↗</span></a></div>
+    <p class="small-note">Live HTML templates. Open any slide to present. Sample content and illustrative data.</p>
+    <noscript><style>.html-slide-preview{display:none}</style><p>Open a layout below to browse the HTML slides.</p></noscript>
+    <div class="slide-template-gallery" aria-label="Presentation template previews">
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-01" title="Paper title preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-01">01 / Paper title <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-02" title="Lime title preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-02">02 / Lime title <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-03" title="Section divider preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-03">03 / Section divider <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-04" title="Agenda preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-04">04 / Agenda <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-05" title="Two-column content preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-05">05 / Two-column content <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-06" title="Statement preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-06">06 / Statement <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-07" title="Comparison preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-07">07 / Comparison <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-08" title="Roadmap preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-08">08 / Roadmap <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-09" title="Data chart preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-09">09 / Data chart <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-10" title="Visual and commentary preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-10">10 / Visual and commentary <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-11" title="Decision preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-11">11 / Decision <span aria-hidden="true">↗</span></a></figcaption></figure>
+      <figure><div class="html-slide-preview" inert aria-hidden="true"><iframe src="presentations/index.html?preview=1#slide-12" title="Closing preview" loading="lazy" tabindex="-1"></iframe></div><figcaption><a href="presentations/index.html#slide-12">12 / Closing <span aria-hidden="true">↗</span></a></figcaption></figure>
+    </div>
     <div class="specimen-heading"><h3>In your hand</h3><span>06.3 / Square business card concept</span></div>
     <div class="card-stage"><div class="card card-front"><span>Alan O Cinneide<br>Software BV</span><div class="card-bands" aria-hidden="true"></div><span class="card-footer">Clear thinking.<br>Colourful possibilities.</span></div><div class="card card-back"><span class="card-name">Alan<br>O Cinneide</span><span class="card-rule"></span><span>Software<br>&amp; creative problem-solving</span><a class="card-footer" href="mailto:alan.ocinneide@gmail.com">alan.ocinneide@gmail.com</a></div><p class="card-caption">65 × 65 mm / Kraft stock reference<br><span>New concept. Print colour and paper need proofing.</span></p></div>
   </section>

@@ -1,4 +1,4 @@
-# House style / v0.1
+# House style / v0.3
 
 **Status: proposed visual system.** The reference artwork and user direction are established. Typography, exact digital palette, compositions and motion values are proposals to refine through feedback.
 
@@ -15,7 +15,7 @@ The original PNG embeds a Display P3 profile. The values below are the dominant 
 | Blue | `#038BCD` | Graphic accents, bands |
 | Green | `#009037` | Graphic accents, bands |
 | Lime | `#B2C906` | Signature light field, emphasis, bands |
-| Olive | `#96845C` | Grounding graphic tone, bands |
+| Gold | `#96845C` | Flat digital gold, bands |
 | White | `#FFFFFF` | Reading surfaces, separation, bands |
 | Orange | `#F7A800` | Light accent fields, bands |
 | Yellow | `#FFEE16` | Light accent fields, bands |
@@ -25,7 +25,7 @@ The original PNG embeds a Display P3 profile. The values below are the dominant 
 | Muted | `#5D6257` | Proposed secondary text on paper/white |
 | Line | `#D8D9CE` | Proposed decorative separators |
 
-Use ink on paper, white, lime, yellow and orange; use white on ink. These pairs meet 4.5:1 contrast for normal text. Muted on paper and white also meets 4.5:1. Blue, green, red and olive are graphic colours; do not assume white or ink body text will pass on them. Check any new pair. Never rely on colour alone to convey state.
+Use ink on paper, white, lime, yellow and orange; use white on ink. These pairs meet 4.5:1 contrast for normal text. Muted on paper and white also meets 4.5:1. Blue, green, red and gold are graphic colours; do not assume white or ink body text will pass on them. Check any new pair. Never rely on colour alone to convey state.
 
 Use a quiet reading surface with one dominant accent in most compositions. All eight original colours can appear together in the bands. The palette may inform UI and page structure even when the bands are absent. Do not force every colour into every artifact.
 
@@ -41,7 +41,7 @@ For presentations, use physical slide sizes with a minimum body size appropriate
 
 Use a 4 px spacing foundation: 4, 8, 12, 16, 24, 32, 48, 64 and 96 px. Content spans at most 1440 px on the reference site, with gutters from 20 to 64 px. Establish reading order using type size, alignment, spacing and thin rules. Use asymmetric two-column layouts where a large statement balances explanatory copy. Stack at small widths. Corners are square or minimally rounded (2 px on controls).
 
-The `assets/bands.svg` graphic is generated from shared tokens. It is a new interpretation of the surviving artwork, with broad continuous curves and flat fills. Preserve the sequence red → blue → green → lime → olive → white → orange → yellow. Crop freely inside a visual area, without stretching the curve proportions. The original has different curve geometry; preserve it as evidence, not as an editable master.
+The `assets/bands.svg` graphic is generated from shared tokens. It is a new interpretation of the surviving artwork, with broad continuous curves and flat fills. Preserve the sequence red → blue → green → lime → gold → white → orange → yellow. Crop freely inside a visual area, without stretching the curve proportions. The original has different curve geometry; preserve it as evidence, not as an editable master.
 
 Give the motif a dedicated area. Avoid running body text across moving or multicolour bands. Do not add gradients, shadows within the bands, faux grain or ornamental Olympic iconography. The reference site uses restrained shadows only for physical card staging and interactive response.
 
@@ -69,3 +69,11 @@ Link to the section or specimen when opening a design feedback issue. Describe w
 The `#controls` playground demonstrates native range, switch, radio group, checkbox, text and select inputs, primary/secondary/disabled buttons, in-place action feedback and a modal panel. Controls immediately update a local composition; no data is sent or stored. Arrow keys operate the slider and radio group; Space toggles switches and checkboxes. The dialog traps focus natively, closes with Escape, and returns focus to its opener.
 
 Interaction references: Gym Circuit Logger (native effort slider, 700 ms palette settling, 420/320 ms panel opening/closing, interruption cancellation) and Mise en Place (quick control feedback). These are behavioural references, not inherited branding. The sliding selection marker uses the 400 ms settling token. Range input follows the pointer immediately, with a short visual settling response. No simulated network request or artificial loading delay. Reduced motion removes transitions and modal animation while preserving all state changes.
+
+## Inspiration and waveform assets / v0.3
+
+The owner clarified the tone as gold: `#96845C` remains the sampled sRGB value, now named `gold`. This is a flat digital representation; metallic gold is a separate print finish, not simulated with gradients. The previous `olive` token is renamed to `gold` in this pre-release system; consumers should update `colour.olive` and `--colour-olive` to `colour.gold` and `--colour-gold`.
+
+The flowing graphics express the owner’s audio roots through organic sinusoids. `npm run generate` creates three flat-colour SVG variants: `bands.svg` (organic wave), `bands-calm.svg` (long wave), `bands-resonance.svg` (stronger harmonic character), plus `signal.svg` (line-wave illustration). Curves combine a fundamental sine and a second harmonic, represented by cubic Hermite segments using analytic derivatives. Parallel offsets preserve band order and prevent crossings. Geometry is a new proposal; the original raster stays unchanged.
+
+The `#inspiration` section links to Moscow 1980 poster collections, Munich 1972 design references, and external SVG emblem records. Historical emblems are reference links, not company assets; poster scans are not relabelled as SVG masters. The owner’s intended optimism is clean construction, bright contrasts, reaching forward and shared societal progress, not gritty science fiction.

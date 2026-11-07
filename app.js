@@ -4,7 +4,7 @@ async function loadPalette() {
     const response = await fetch('design/tokens.json');
     if (!response.ok) throw new Error('Unable to load tokens');
     const { colour } = await response.json();
-    const names = ['blue', 'green', 'lime', 'olive', 'white', 'orange', 'yellow', 'red'];
+    const names = ['blue', 'green', 'lime', 'gold', 'white', 'orange', 'yellow', 'red'];
     for (const name of names) {
       const hex = colour[name];
       const button = document.createElement('button');

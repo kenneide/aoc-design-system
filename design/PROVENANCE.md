@@ -42,3 +42,13 @@ Space Grotesk variable TTF and OFL.txt obtained from the Google Fonts `ofl/space
 2026-11-07 — v0.1 proposed. Awaiting visual review; no subsequent choices are marked approved.
 
 2026-11-07 — v0.2: owner requested less prose and hands-on input/motion examples from recent repos. Added control patterns informed by Gym Circuit Logger and Mise en Place; visuals remain this house style. These new specimens are proposed interpretations.
+
+2026-11-07 — v0.3: owner corrected the grounded tone to **gold** and established organic sinusoids as the motif’s link to personal audio roots. Clarified optimistic retrofuturism as bold contrasts, clean lines and shared progress. Preserved the sampled gold value; renamed the token. Added three generated sinusoidal band variants and a signal illustration, with new geometry still proposed for visual review.
+
+### Added visual references
+
+- [Moscow 1980 rocket/flame poster — Olympic Museum](https://olympic-museum-artefacts.zetcom.net/en/collection/item/109162/): collection record credits Martin Krastev and describes a rocket-stylised flame, with blue, multicolour and gold.
+- [Moscow poster — People’s Graphic Design Archive](https://peoplesgdarchive.org/item/1728/moscow-olympics-poster) and [cultural programme poster](https://peoplesgdarchive.org/item/2884/cultural-program-of-the-moscow-olympic-games): linked historical graphics.
+- [Moscow emblem SVG redraw — Openclipart, rones](https://openclipart.org/detail/98035/olympiad1980-emblem) and [Munich emblem SVG — Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_M%C3%BCnchen_1972.svg): external vector reference records, not original poster files.
+
+Historical references are linked, not bundled or used as company identity assets. The signal and band SVGs are original generated illustrations.

@@ -1,6 +1,6 @@
 # Alan O Cinneide Software — house style
 
-An evolving design system for websites, presentations and printed material. Version 0.2 is a **proposal for review**, grounded in the company's surviving business-card background and a retro-futuristic direction inspired by Munich 1972 and Moscow 1980.
+An evolving design system for websites, presentations and printed material. Version 0.3 is a **proposal for review**, grounded in the company's surviving business-card background and a retro-futuristic direction inspired by Munich 1972 and Moscow 1980.
 
 **[Open the reference site](https://kenneide.github.io/aoc-design-system/)** · **[Give feedback](https://github.com/kenneide/aoc-design-system/issues/new?template=design-feedback.yml)**
 
@@ -37,7 +37,7 @@ Change compositions in `index.html`, layout in `styles.css`, and interactions in
 
 The Pages workflow validates pull requests and deploys pushes to `main`. GitHub Pages must use **GitHub Actions** as its source. Only the allowlisted public website files are copied to `dist/`; administrative records are never included.
 
-Feedback can reference the stable section anchors: `#principles`, `#colour`, `#typography`, `#graphic`, `#motion` / `#controls`, `#applications`, `#use`. Specimens are numbered 06.1 (web), 06.2 (slides), 06.3 (card). Use the design feedback issue template with a section link and the desired change. Update guidance and examples together after a decision is accepted.
+Feedback can reference the stable section anchors: `#principles`, `#colour`, `#typography`, `#graphic`, `#inspiration`, `#motion` / `#controls`, `#applications`, `#use`. Specimens are numbered 06.1 (web), 06.2 (slides), 06.3 (card). Use the design feedback issue template with a section link and the desired change. Update guidance and examples together after a decision is accepted.
 
 ## Rights
 

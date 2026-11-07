@@ -7,6 +7,7 @@ Read [design/README.md](design/README.md), [design/PROVENANCE.md](design/PROVENA
 - Display name: **Alan O Cinneide Software**. Reserve B.V. for legal material when needed.
 - Retro-futuristic, optimistic and clear; inspired by Munich 1972 and Moscow 1980.
 - The surviving business-card background is the visual reference. Its colours matter throughout the system; flowing bands are a selective signature motif.
+- The grounded palette tone is **gold**, not olive. Organic sinusoids and gentle harmonics connect the flowing graphics to the owner’s audio roots. Optimism means bright contrasts, clean construction and shared progress toward a new future.
 - Smooth, purposeful animation is desirable. Maestro's colours, typography and branding are explicitly excluded.
 
 ## Proposed defaults, awaiting visual feedback

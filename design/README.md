@@ -6,7 +6,7 @@
 
 Use **Alan O Cinneide Software BV** everywhere the company is named, including wordmarks, page titles, specimen branding and company references. Keep **BV** without periods, as specified by the owner. A line break before “Software BV” is allowed; do not omit the suffix.
 
-[company.json](company.json) is the canonical public identity record. Inquiry links use `mailto:alan.ocinneide@gmail.com`. Website footers show the full company name, an email inquiry link and **KVK 84179686** linked to the official KVK search for that number. The site and specimens use these values; tests check the footer against the shared record. Changes to contact details must update the record and all corresponding links together.
+[company.json](company.json) is the canonical public identity record. Inquiry links use `mailto:hello@alanocinneide.com`. Website footers show the full company name, an email inquiry link and **KVK 84179686** linked to the official KVK search for that number. The site and specimens use these values; tests check the footer against the shared record. Changes to contact details must update the record and all corresponding links together.
 
 ## Character
 

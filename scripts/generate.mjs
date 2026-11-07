@@ -30,18 +30,20 @@ function curve(base, spec) {
   return d;
 }
 const variants = [
-  {file:'bands', title:'Organic sinusoidal bands', amplitude:155,period:1040,phase:-.8,overtone:24},
-  {file:'bands-calm', title:'Long-wave sinusoidal bands', amplitude:110,period:1600,phase:-1.1,overtone:12},
-  {file:'bands-resonance', title:'Harmonic sinusoidal bands', amplitude:130,period:900,phase:.3,overtone:35}
+  {file:'bands', title:'Organic sinusoidal bands', amplitude:105,period:1040,phase:-.8,overtone:24},
+  {file:'bands-calm', title:'Long-wave sinusoidal bands', amplitude:70,period:1600,phase:-1.1,overtone:12},
+  {file:'bands-resonance', title:'Harmonic sinusoidal bands', amplitude:90,period:900,phase:.3,overtone:35}
 ];
 const outputs = [['../design/tokens.css', css]];
 for (const spec of variants) {
-  const paths = colours.slice(1).map((c,i) => `<path fill="${tokens.colour[c]}" d="${curve(-170+(i+1)*85,spec)} L1280 640 H0Z"/>`).join('\n  ');
+  const paths = colours.slice(1).map((c,i) => `<path fill="${tokens.colour[c]}" d="${curve(145+i*54,spec)} L1280 640 H0Z"/>`).join('\n  ');
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640"><title>${spec.title}</title><desc>Original company graphic: a fundamental sine wave with a gentle second harmonic, connecting flowing colour to audio roots. Flat gold uses the sampled reference colour.</desc>\n  <rect width="1280" height="640" fill="${tokens.colour.red}"/>\n  ${paths}\n</svg>\n`;
   outputs.push([`../assets/${spec.file}.svg`,svg]);
 }
-const signalPaths = ['blue','gold','green'].map((colour,i) => `<path d="${curve(320,{amplitude:115-i*28,period:1100-i*220,phase:-.6,overtone:i*12})}" stroke="${tokens.colour[colour]}"/>`).join('\n  ');
-outputs.push(['../assets/signal.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640"><title>Audio roots: superposed sinusoids</title><desc>Three continuous waveforms in blue, gold and green. An original illustration of the audio influence, not a measured audio signal.</desc><rect width="1280" height="640" fill="${tokens.colour.paper}"/><g fill="none" stroke-width="6" stroke-linecap="round">${signalPaths}</g></svg>\n`]);
+// Parallel vertical offsets keep all eight signals separated rather than tangled.
+const signalSpec = {amplitude:64,period:1180,phase:-.65,overtone:12};
+const signalPaths = colours.map((colour,i) => `<path d="${curve(145+i*50,signalSpec)}" stroke="${tokens.colour[colour]}"/>`).join('\n  ');
+outputs.push(['../assets/signal.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640"><title>Audio roots: offset sinusoids</title><desc>Eight evenly offset, non-crossing waveforms in red, blue, green, lime, gold, white, orange and yellow. An original illustration of the audio influence, not a measured audio signal.</desc><rect width="1280" height="640" fill="${tokens.colour.ink}"/><g fill="none" stroke-width="12" stroke-linecap="round">${signalPaths}</g></svg>\n`]);
 for (const [file, content] of outputs) {
   const url = new URL(file, import.meta.url);
   if (process.argv.includes('--check')) {

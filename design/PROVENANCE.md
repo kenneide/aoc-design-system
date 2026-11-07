@@ -54,3 +54,5 @@ Space Grotesk variable TTF and OFL.txt obtained from the Google Fonts `ofl/space
 Historical references are linked, not bundled or used as company identity assets. The signal and band SVGs are original generated illustrations.
 
 2026-11-07 — owner explicitly standardised the company name as **Alan O Cinneide Software BV**, superseding the earlier shortened display-name convention. Added the inquiry address used in the owner's existing invoicing configuration and KVK 84179686 confirmed in registry correspondence to the public identity record. The owner requested publication of inquiry and KVK links; no administrative source files are published.
+
+2026-11-07 — owner requested offset sinusoids and every brand colour, explicitly including red. Replaced the three crossing signals with eight evenly spaced, non-crossing waveforms. Rebalanced all band variants to keep red and yellow visible within the exported canvas.

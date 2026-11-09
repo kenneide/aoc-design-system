@@ -49,3 +49,8 @@ Company artwork and identity assets remain the property of their respective righ
 ## Custom domain
 
 GitHub Pages settings map `design.alanocinneide.com` to this repository. Cloudflare uses a DNS-only `design` CNAME pointing to `kenneide.github.io`; the repository name is not part of the DNS target. Keep the existing Pages Actions publisher and enable Enforce HTTPS once its certificate is issued. Workflow-based Pages deployments do not need a repository `CNAME` file. The company homepage and project directory are at `https://alanocinneide.com/`.
+
+
+## Production hosting and updates
+
+The public website is https://design.alanocinneide.com/, hosted by the GitHub-connected Cloudflare Pages project `aoc-design-system`. Push to this repository’s `main` branch to trigger an automatic Cloudflare build and deployment; no dashboard upload is needed. The build command is `npm run build`, and only `dist` is published. Cloudflare manages custom-domain certificates and HTTP-to-HTTPS redirects. Check the Cloudflare status on the GitHub commit before treating an update as live. Existing GitHub Pages workflows remain as a fallback; production DNS points to Cloudflare. Do not change mail records when maintaining website DNS.
